@@ -98,14 +98,14 @@ textarea:focus, input:focus{
     margin-left: auto; /* Shift the container to the right */
     padding-right: 10px; /* Add some padding to the right */
 }
-.top-left-participant-wrap,
-.top-left-chat-wrap {
-    margin-right: 100px; /* Adjust the margin as needed */
+.top-left-participant-wrap {
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 
-.top-left-participant-wrap {
-    margin-left: auto;
+.top-left-chat-wrap {
+    margin-left: 250px; /* Adjust the margin as needed */
 }
+
 
 .top-left-participant-count{
     position:absolute;
@@ -133,16 +133,26 @@ textarea:focus, input:focus{
     border-radius: 50%;
 }
 
-.action-icon-style span.material-icons{
-    /* font-size: 18px; */
-}
+
 
 .end-call-wrap{
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
-#meetingConatiner {
+#meetingContainer {
     display: block; /* Ensure the meeting container is visible by default */
     /* Add any other styling properties here */
+    position: relative;
+}
+
+.top-remote-video-show-wrap{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+video{
+    border: 1px solid gray;
+    width: 300px;
 }
