@@ -94,12 +94,19 @@ textarea:focus, input:focus{
 }
 
 .g-top-left {
-    width: 25%; /* Set the width of the container */
-    margin-left: auto; /* Shift the container to the right */
-    padding-right: 10px; /* Add some padding to the right */
+    width: 20%;
+    height: 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Adjust the z-index as needed */
+    background-color: #ffffff; /* Optional: Set background color */
+    padding: 10px; /* Optional: Add padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 .top-left-participant-wrap {
-    margin-right: 10px; /* Adjust the margin as needed */
+    margin-right: -23px; /* Adjust the margin as needed */
 }
 
 .top-left-chat-wrap {
@@ -155,4 +162,51 @@ textarea:focus, input:focus{
 video{
     border: 1px solid gray;
     width: 300px;
+}
+.active{
+    background-color: #00808047;
+    border-radius: 5px;
+}
+.top-box{
+    background-color: rgb(14 6 6);
+    position: fixed;
+    width: 30%;
+    height: 30%;
+    top: 20.5%;
+    left: 35.5%;
+    display: block;
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+    z-index: 999;
+    columns: white;
+    border: 2px solid white;
+
+}
+.bottom-left{
+    position: relative;
+    padding: 5px;
+}
+
+.g-deatils{
+    position: absolute;
+    width: 30vw;
+    background-color: white;
+    margin-top: -135px;
+    counter-reset: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.g-deatils-heading-show{
+    font-size: 14px;
+    padding-left: 10px;
+}
+.g-deatils-heading-deatils,
+.g-deatils-heading-attachment {
+    display: flex;
+    align-items: center;
+}
+
+.g-deatils-heading-attachment {
+    margin-left: 1rem; /* Adjust margin as needed */
 }
